@@ -10,7 +10,8 @@ Run this command to clone the repository
 ```shell
 git clone https://github.com/til-23/til-23-asr.git
 ```    
-   
+
+<!--
 ### Creating a python environment     
 Proceed to create a python virtual environment. Ensure that you are inside in repository
      
@@ -26,7 +27,8 @@ To activate the python environment, run this command:
 ```shell
 source venv/bin/activate
 ```
-    
+-->
+
 ### Install requirements    
 To install the requirements, run the following commands:    
     
@@ -39,7 +41,7 @@ pip install torch==1.12.1+cu116 torchaudio==0.12.1 --extra-index-url https://dow
 
 ### Model Training   
 To train a model, modify the directory where you saved the data and the corresponding annotation file,  modify the model path directory where the trained model is saved, experiment with the different `hparams` values. Feel free to modify the code too. Execute this command to start training:   
-  
+
 ```shell
 python3 src/train.py
 ```
