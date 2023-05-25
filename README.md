@@ -9,6 +9,7 @@ Run this command to clone the repository
    
 ```shell
 git clone https://github.com/til-23/til-23-asr.git
+cd til-23-asr/
 ```    
 
 <!--
