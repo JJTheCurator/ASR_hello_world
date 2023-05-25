@@ -34,7 +34,7 @@ source venv/bin/activate
 To install the requirements, run the following commands:    
     
 ```shell
-pip install -r requirements
+pip install -r requirements.txt
 pip install torch==1.12.1+cu116 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu116   
 ``` 
 
