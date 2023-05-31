@@ -87,11 +87,11 @@ if __name__ == "__main__":
         }
 
     # change the filepath as according
-    SAVED_MODEL_PATH = '/home/nicholas/models/til2023/model.pt'
-    SUBMISSION_PATH = '/home/nicholas/models/til2023/Submission_Advanced.csv' # or '/home/nicholas/models/til2023/Submission_Novice.csv' if novice tier
+    SAVED_MODEL_PATH = '/content/model.pt'
+    SUBMISSION_PATH = '/content/Submission_Advanced.csv' # or '/home/nicholas/models/til2023/Submission_Novice.csv' if novice tier
 
-    MANIFEST_FILE_TEST = '/home/nicholas/datasets/til2023_asr_dataset/Test_Advanced.csv' # or '/home/nicholas/datasets/til2023_asr_dataset/Test_Novice.csv' if novice tier 
-    AUDIO_DIR_TEST = '/home/nicholas/datasets/til2023_asr_dataset/Test_Advanced/' # or '/home/nicholas/datasets/til2023_asr_dataset/Test_Novice/' if novice tier
+    MANIFEST_FILE_TEST = '/content/drive/MyDrive/BrainHack TIL-23 Speech Recognition Advanced Hackathon/Test_Advanced.csv' # or '/home/nicholas/datasets/til2023_asr_dataset/Test_Novice.csv' if novice tier 
+    AUDIO_DIR_TEST = '/content/Test_Advanced/' # or '/home/nicholas/datasets/til2023_asr_dataset/Test_Novice/' if novice tier
     
     dataset_test = CustomSpeechDataset(
         manifest_file=MANIFEST_FILE_TEST, 

@@ -72,9 +72,9 @@ def main(hparams, train_dataset, dev_dataset, saved_model_path) -> None:
 
 if __name__ == "__main__":
 
-    MANIFEST_FILE_TRAIN = '/home/nicholas/datasets/til2023_asr_dataset/Train.csv'
-    AUDIO_DIR_TRAIN = '/home/nicholas/datasets/til2023_asr_dataset/Train'
-    SAVED_MODEL_PATH = '/home/nicholas/models/til2023/model.pt'
+    MANIFEST_FILE_TRAIN = '/content/drive/MyDrive/BrainHack TIL-23 Speech Recognition Advanced Hackathon/Train.csv'
+    AUDIO_DIR_TRAIN = '/content/Train'
+    SAVED_MODEL_PATH = '/content/model.pt'
 
     # simple check on the saved model path, will raise error if no directory found
     if not os.path.exists(os.path.dirname(SAVED_MODEL_PATH)):
