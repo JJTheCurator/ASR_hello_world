@@ -78,7 +78,7 @@ if __name__ == "__main__":
             "n_rnn_layers": 5,
             "rnn_dim": 512,
             "n_class": 28, # 26 alphabets in caps + <SPACE> + blanks
-            "n_feats": 40,
+            "n_feats": 128,
             "stride": 2,
             "dropout": 0.1,
             "learning_rate": 1e-4,
@@ -90,7 +90,7 @@ if __name__ == "__main__":
     SAVED_MODEL_PATH = '/content/drive/MyDrive/BrainHack TIL-23 Speech Recognition Advanced Hackathon/model.pt'
     SUBMISSION_PATH = '/content/Submission_Advanced.csv' # or '/home/nicholas/models/til2023/Submission_Novice.csv' if novice tier
 
-    MANIFEST_FILE_TEST = '/content/drive/MyDrive/BrainHack TIL-23 Speech Recognition Advanced Hackathon/Test_Advanced.csv' # or '/home/nicholas/datasets/til2023_asr_dataset/Test_Novice.csv' if novice tier 
+    MANIFEST_FILE_TEST = '/content/drive/MyDrive/BrainHack TIL-23 Speech Recognition Advanced Hackathon/Test_Advanced_19May.csv' # or '/home/nicholas/datasets/til2023_asr_dataset/Test_Novice.csv' if novice tier 
     AUDIO_DIR_TEST = '/content/Test_Advanced/audio' # or '/home/nicholas/datasets/til2023_asr_dataset/Test_Novice/' if novice tier
     
     dataset_test = CustomSpeechDataset(

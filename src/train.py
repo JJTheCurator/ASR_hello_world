@@ -27,7 +27,7 @@ def main(hparams, train_dataset, dev_dataset, saved_model_path) -> None:
     trainer = TrainingLoop()
     
     device = torch.device("cuda" if use_cuda else "cpu")
-    kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
+    kwargs = {'num_workers': 5, 'pin_memory': True} if use_cuda else {}
     
     train_loader = torch.utils.data.DataLoader(
         dataset=train_dataset,
@@ -94,11 +94,11 @@ if __name__ == "__main__":
 
     
     hparams = {
-            "n_cnn_layers": 3,
-            "n_rnn_layers": 5,
+            "n_cnn_layers": 6,
+            "n_rnn_layers": 8,
             "rnn_dim": 512,
             "n_class": 28, # 26 alphabets in caps + <SPACE> + blanks
-            "n_feats": 40,
+            "n_feats": 128,
             "stride": 2,
             "dropout": 0.1,
             "learning_rate": 1e-4,
