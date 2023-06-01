@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
     MANIFEST_FILE_TRAIN = '/content/drive/MyDrive/BrainHack TIL-23 Speech Recognition Advanced Hackathon/Train.csv'
     AUDIO_DIR_TRAIN = '/content/Train'
-    SAVED_MODEL_PATH = '/content/model.pt'
+    SAVED_MODEL_PATH = '/drive/MyDrive/BrainHack TIL-23 Speech Recognition Advanced Hackathon/model.pt'
 
     # simple check on the saved model path, will raise error if no directory found
     if not os.path.exists(os.path.dirname(SAVED_MODEL_PATH)):
