@@ -21,10 +21,10 @@ class DataProcessor:
     def _audio_transformation(self, is_train: bool=True):
 
         return torch.nn.Sequential(
-                torchaudio.transforms.MelSpectrogram(sample_rate=16000, n_mels=128),
+                torchaudio.transforms.MelSpectrogram(sample_rate=16000, n_mels=40),
                 torchaudio.transforms.FrequencyMasking(freq_mask_param=30),
                 torchaudio.transforms.TimeMasking(time_mask_param=100)
-            ) if is_train else torchaudio.transforms.MelSpectrogram(sample_rate=16000, n_mels=128)
+            ) if is_train else torchaudio.transforms.MelSpectrogram(sample_rate=16000, n_mels=40)
     
 
     def data_processing(self, data, data_type='train'):

@@ -9,7 +9,7 @@ from time import time
 from modules import DataProcessor, TextTransform, IterMeter, SpeechRecognitionModel, TrainingLoop, CustomSpeechDataset
 
 # setting the random seed for reproducibility
-SEED = 2022
+SEED = 2023
 
 
 def main(hparams, train_dataset, dev_dataset, saved_model_path) -> None:
@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
     MANIFEST_FILE_TRAIN = '/content/drive/MyDrive/BrainHack TIL-23 Speech Recognition Advanced Hackathon/Train.csv'
     AUDIO_DIR_TRAIN = '/content/Train'
-    SAVED_MODEL_PATH = '/drive/MyDrive/BrainHack TIL-23 Speech Recognition Advanced Hackathon/model.pt'
+    SAVED_MODEL_PATH = '/content/drive/MyDrive/BrainHack TIL-23 Speech Recognition Advanced Hackathon/model.pt'
 
     # simple check on the saved model path, will raise error if no directory found
     if not os.path.exists(os.path.dirname(SAVED_MODEL_PATH)):
@@ -98,7 +98,7 @@ if __name__ == "__main__":
             "n_rnn_layers": 5,
             "rnn_dim": 512,
             "n_class": 28, # 26 alphabets in caps + <SPACE> + blanks
-            "n_feats": 128,
+            "n_feats": 40,
             "stride": 2,
             "dropout": 0.1,
             "learning_rate": 1e-4,
