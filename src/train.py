@@ -95,7 +95,7 @@ if __name__ == "__main__":
     
     hparams = {
             "n_cnn_layers": 6,
-            "n_rnn_layers": 8,
+            "n_rnn_layers": 10,
             "rnn_dim": 512,
             "n_class": 28, # 26 alphabets in caps + <SPACE> + blanks
             "n_feats": 128,
