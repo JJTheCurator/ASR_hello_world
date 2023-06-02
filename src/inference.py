@@ -124,5 +124,7 @@ if __name__ == "__main__":
     end_time = time()
 
     print(f"Time taken for inference: {(end_time-start_time)/60} min")
+    from google.colab import files
+    files.download('results.csv') 
 
     
